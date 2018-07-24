@@ -5,7 +5,12 @@ import PropTypes from "prop-types";
 class SearchBooks extends Component {
   // Initial state
   state = {
-    books: []
+    books: [],
+    query: ""
+  }
+
+  updateQuery = (query) => {
+    this.setState({ query: query.trim() })
   }
 
     render() {
@@ -17,6 +22,8 @@ class SearchBooks extends Component {
                 <input 
                 type="text" 
                 placeholder="Search by title or author"
+                value={this.state.query}
+                onChange={(evt) => this.updateQuery(evt.target.value)}
                 />
               </div>
             </div>
