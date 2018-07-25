@@ -9,15 +9,15 @@ class ListBooks extends Component {
     render() {
       const { books, arrangeShelf } = this.props;
       // Define shelf categories
-      const shelfCategories = [{ type: 'currentlyReading', title: 'Currently Reading' },
-                          { type: 'wantToRead',  title: 'Want To Read' },
-                          { type: 'read', title: 'Read'}];
+      const shelfCategories = [{ category: 'currentlyReading', title: 'Currently Reading' },
+                          { category: 'wantToRead',  title: 'Want To Read' },
+                          { category: 'read', title: 'Read'}];
   
     return (
         <div className="list-books-content">
-        {/* Map over the shelf categories, use index as key and return the books */}
+        {/* Map over the shelf categories, use index as key and return the books details */}
           {shelfCategories.map(( shelf, index ) =>  {
-            const shelfBooks = books.filter( book => book.shelf === shelf.type)
+            const shelfBooks = books.filter( book => book.shelf === shelf.category);
             return (
               <div className="bookshelf" key={ index }>
                 <h2 className="bookshelf-title">{ shelf.title }</h2>
