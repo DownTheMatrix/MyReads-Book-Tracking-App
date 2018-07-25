@@ -6,6 +6,7 @@ import SearchBooks from "./components/SearchBooks";
 import ListBooks from "./components/ListBooks";
 
 class BooksApp extends Component {
+    // Set initial state
     state = {
     books: []
   };
@@ -13,7 +14,7 @@ class BooksApp extends Component {
   /* Returns a Promise which resolves to a JSON object containing a collection of book objects.
   This collection represents the books currently in the bookshelves in your app. */
   retrieveBooksInfo = () => {
-    BooksAPI.getAll().then(books => {
+    BooksAPI.getAll().then( books => {
       this.setState({ books });
     })
   }
@@ -23,16 +24,15 @@ class BooksApp extends Component {
     this.retrieveBooksInfo();
   }
 
-  arrangeShelf = (newBook, newShelf) => {
-    BooksAPI.update(newBook, newShelf).then((response) => {
-      alert("new book added!");
+  arrangeShelf = ( newBook, newShelf ) => {
+    BooksAPI.update( newBook, newShelf ).then(( response ) => {
+      alert('book successfully moved!');
       // Arrange the shelf
       newBook.shelf = newShelf;
       // Sort the books
       const updatedBooks = this.state.books.filter( book => book.id !== newBook.id );
-
       // Push the new books into the array, and then merge the state
-      updatedBooks.push(newBook)
+      updatedBooks.push( newBook )
       this.setState({ books: updatedBooks });
     })
   }
