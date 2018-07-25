@@ -88,6 +88,11 @@ body, .app {
 }
 
 /* Search Page */
+.search-books {
+  background: #43cea2;
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+  background: linear-gradient(to right, #185a9d, #43cea2); 
+}
 
 .search-books-bar {
   position: fixed;
@@ -128,6 +133,11 @@ body, .app {
 
 .search-books-results {
   padding: 80px 10px 20px;
+}
+
+.search-books-results h3 {
+  color: rgb(225, 227, 231);
+  text-align: center;
 }
 
 /* Books Grid */
