@@ -32,12 +32,13 @@ body, .app {
   padding: 10px 0;
   background: var(--primary-color);
   text-align: center;
+  border-bottom: 2px solid rgb(27, 45, 207);
 }
 
 .list-books-title h1 {
   font-weight: 400;
   margin: 0;
-  color: #fff;
+  color: rgb(225, 227, 231);
 }
 
 .list-books-content {
@@ -51,7 +52,7 @@ body, .app {
 
 @media (min-width: 600px) {
   .bookshelf {
-    padding: 0 20px 40px;
+    padding: 0 20px 0px;
   }
 }
 
@@ -59,6 +60,7 @@ body, .app {
   border-bottom: 2px solid #dedede;
   text-align: center;
   padding-bottom: 0.3em;
+  color: rgb(0, 0, 139);
 }
 
 .bookshelf-books {
@@ -155,10 +157,11 @@ body, .app {
 
 .book-title {
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .book-authors {
-  color: #9DE;
+  color: rgb(207, 233, 240);
 }
 
 .book-top {
