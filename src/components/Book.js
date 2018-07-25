@@ -30,9 +30,8 @@ class Book extends Component {
               ))}
             </div>
           </li>
-    )
-  }
-
+        )
+    }
 }
 
 export default Book;
