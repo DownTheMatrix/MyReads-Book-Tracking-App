@@ -15,8 +15,10 @@ Each book comes with a drop-down menu which contains the shelves. Clicking on th
 
 To get started:
 
+* clone the project or download it as a .zip file
+* open the terminal
 * cd into the project folder
-* in the terminal, install all project dependencies with `npm install`
+* install all project dependencies with `npm install`
 * start the development server with `npm start`
 
 ## Search Terms
@@ -25,7 +27,7 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 
 'Android', 'Art', 'Artificial Intelligence', 'Astronomy', 'Austen', 'Baseball', 'Basketball', 'Bhagat', 'Biography', 'Brief', 'Business', 'Camus', 'Cervantes', 'Christie', 'Classics', 'Comics', 'Cook', 'Cricket', 'Cycling', 'Desai', 'Design', 'Development', 'Digital Marketing', 'Drama', 'Drawing', 'Dumas', 'Education', 'Everything', 'Fantasy', 'Film', 'Finance', 'First', 'Fitness', 'Football', 'Future', 'Games', 'Gandhi', 'Homer', 'Horror', 'Hugo', 'Ibsen', 'Journey', 'Kafka', 'King', 'Lahiri', 'Larsson', 'Learn', 'Literary Fiction', 'Make', 'Manage', 'Marquez', 'Money', 'Mystery', 'Negotiate', 'Painting', 'Philosophy', 'Photography', 'Poetry', 'Production', 'Programming', 'React', 'Redux', 'River', 'Robotics', 'Rowling', 'Satire', 'Science Fiction', 'Shakespeare', 'Singh', 'Swimming', 'Tale', 'Thrun', 'Time', 'Tolstoy', 'Travel', 'Ultimate', 'Virtual Reality', 'Web Development', 'iOS'
 
-For the full list of terms, see the SEARCH_TERMS.md file in this repo.
+For the full list of terms, see the [SEARCH_TERMS.md](SEARCH_TERMS.md) file in this repo.
 
 ## Create React App
 
