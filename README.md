@@ -41,8 +41,10 @@ This app is released under a MIT license.
 
 ## Todos
 
-1. Add fallback image for unavailable books
-2. Add custom modal with the instructions on how to use the app
+1. Add fallback images for unavailable books
+2. Add starting modal with the instructions on how to use the app
 3. Implement animations (spinners, etc.)
 4. Add accessibility features
 5. Improve performance metrics (Chrome Lighthouse)
+6. Make it a progressive web app (add offline capabilities)
+7. Trigger a popup box signaling that a book has been moved to the corresponding shelf
