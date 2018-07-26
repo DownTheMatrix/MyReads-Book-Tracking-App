@@ -3,7 +3,7 @@ import BookShelf from "./BookShelf";
 
 class ListBooks extends Component {
     state = { 
-        shelfChange: false 
+        changedShelf: false // credit: my mentor, Lorena :)
     }
   
     render() {
