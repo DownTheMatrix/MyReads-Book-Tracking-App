@@ -9,9 +9,9 @@ class ListBooks extends Component {
     render() {
       const { books, arrangeShelf } = this.props;
       // Define shelf categories
-      const shelfCategories = [{ category: 'currentlyReading', title: 'Currently Reading' },
-                          { category: 'wantToRead',  title: 'Want To Read' },
-                          { category: 'read', title: 'Read'}];
+      const shelfCategories = [{ category: "currentlyReading", title: "Currently Reading "},
+                               { category: "wantToRead",  title: "Want To Read" },
+                               { category: "read", title: "Read"}];
   
     return (
         <div className="list-books-content">
