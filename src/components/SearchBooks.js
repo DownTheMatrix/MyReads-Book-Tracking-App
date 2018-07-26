@@ -17,8 +17,9 @@ class SearchBooks extends Component {
     // detect user input in search field (20 is the max amount of books displayed)
     if ( query ) {
         BooksAPI.search( query, 20 ).then(( books ) => {
-          books.length > 0 ? this.setState({ newBooks: books }) : this.setState({ newBooks: [] })
-      })} else {
+          if ( query === this.state.query ) {
+            return books.length > 0 ? this.setState({ newBooks: books }) : this.setState({ newBooks: [] });
+          }})} else {
           this.setState({ newBooks: [] });
         } 
       }
