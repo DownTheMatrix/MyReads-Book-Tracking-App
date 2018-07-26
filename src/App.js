@@ -24,9 +24,15 @@ class BooksApp extends Component {
     this.retrieveBooksInfo();
   }
 
+  // Todo: implement a notification system to tell the user the book has been moved to the corresponding shelf
+  alertChange = () => {
+    alert("book successfully moved to the chosen shelf: " /* + current shelf */);
+  }
+
   arrangeShelf = ( newBook, newShelf ) => {
     BooksAPI.update( newBook, newShelf ).then(( response ) => {
-      alert('book successfully moved!');
+      // Notify the user about the shelf change
+      this.alertChange();
       // Arrange the shelf
       newBook.shelf = newShelf;
       // Sort the books
