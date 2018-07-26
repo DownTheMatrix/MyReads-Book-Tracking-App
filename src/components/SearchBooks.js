@@ -15,11 +15,11 @@ class SearchBooks extends Component {
     this.setState({ query: query }); // merge state
 
     // detect user input in search field (20 is the max amount of books displayed)
-    if (query) {
+    if ( query ) {
         BooksAPI.search( query, 20 ).then(( books ) => {
           books.length > 0 ? this.setState({ newBooks: books }) : this.setState({ newBooks: [] })
       })} else {
-          this.setState({newBooks: [] });
+          this.setState({ newBooks: [] });
         } 
       }
 
