@@ -5,30 +5,27 @@ import * as BooksAPI from "../utils/BooksAPI";
 
 class SearchBooks extends Component {
     state = {
-    query: '',
+    query: "",
     newBooks: [],
+    queryError: false
   }
 
   retrieveBooks = (event) => {
-
     const query = event.target.value.trim(); // get rid of spaces in the query
     this.setState({ query: query }); // merge state
-
     // detect user input in search field (20 is the max amount of books displayed)
     if ( query ) {
         BooksAPI.search( query, 20 ).then(( books ) => {
           if ( query === this.state.query ) {
-            return books.length > 0 ? this.setState({ newBooks: books }) : this.setState({ newBooks: [] });
+            return books.length > 0 ? this.setState({ newBooks: books, queryError: false }) : this.setState({ newBooks: [], queryError: true });
           }})} else {
-          this.setState({ newBooks: [] });
+          this.setState({ newBooks: [], queryError: false });
         } 
       }
 
   render() {
-
-    const { query, newBooks } = this.state;
+    const { query, newBooks, queryError } = this.state;
     const { books, arrangeShelf } = this.props;
-
       return (
         <div className="search-books">
           <div className="search-books-bar">
@@ -54,12 +51,20 @@ class SearchBooks extends Component {
                       key={ book.id }
                       arrangeShelf={ arrangeShelf }
                     />
-                  ))}
+                  ))} 
                 </ol>
               </div>
             )}
+            { queryError && (
+                <div>
+                  <div className=''>
+                    <h3>Books not found! Try with another keyword.</h3> {/* Added as per reviewer suggestion */}
+                  </div>
+                </div>
+              )}
           </div>
         </div>
       )}
-}
+    }
+
 export default SearchBooks;
