@@ -24,7 +24,7 @@ class Book extends Component {
                 />
               </div>
               <div className="book-title">{ title }</div>
-              { /* Check for authors and render each on separate line if exist*/
+              { /* Assign an index as key to each book */
                 book.authors && book.authors.map(( author, index ) => (
                   <div className="book-authors" key={ index }>{ author }</div>
               ))}
