@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img width="400" height="136,038 " src="https://user-images.githubusercontent.com/40801473/43848833-c71236da-9b2b-11e8-9a03-ae1df32087de.png">
+</p>
+
+
 # Project Overview
 
 MyReads: A Book Tracking App is a React.js app which allows to add books and move them into different shelves, depending on the user action.
