@@ -27,6 +27,8 @@ To get started:
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
+Alternatively, you can view the live version [here](https://elated-swanson-1fbc38.netlify.com/).
+
 ## Search Terms
 
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms. Here they are: 
