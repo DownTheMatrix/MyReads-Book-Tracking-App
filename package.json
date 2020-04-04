@@ -6,6 +6,7 @@
     "eslint-utils": "^1.4.2",
     "handlebars": "^4.3.0",
     "js-yaml": "^3.13.1",
+    "kind-of": "^6.0.3",
     "lodash": "^4.17.14",
     "lodash.template": "^4.5.0",
     "mem": "^5.1.1",
