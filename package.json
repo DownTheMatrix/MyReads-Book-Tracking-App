@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "acorn": "^7.2.0",
+    "dot-prop": "^5.2.0",
     "escape-string-regexp": "^1.0.5",
     "eslint-utils": "^1.4.2",
     "handlebars": "^4.7.6",
