@@ -7,16 +7,16 @@ class BookShelf extends Component {
 
     return (
       <ol className="books-grid">
-        {books.map(( book ) => (
+        {books.map((book) => (
           <Book
-            book={ book }
-            books={ books }
-            key={ book.id }
-            arrangeShelf={ arrangeShelf }
+            book={book}
+            books={books}
+            key={book.id}
+            arrangeShelf={arrangeShelf}
           />
         ))}
       </ol>
-    )
+    );
   }
 }
 
