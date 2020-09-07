@@ -5,6 +5,7 @@
     "escape-string-regexp": "^1.0.5",
     "eslint-utils": "^1.4.2",
     "handlebars": "^4.7.6",
+    "http-proxy": "^1.18.1",
     "js-yaml": "^3.13.1",
     "kind-of": ">=6.0.3",
     "lodash": "^4.17.19",
@@ -17,10 +18,11 @@
     "react-router-dom": "^4.3.1",
     "set-value": "^3.0.1",
     "sort-by": "^1.2.0",
-    "websocket-extensions": "^0.1.4"
+    "websocket-extensions": "^0.1.4",
+    "yargs-parser": "^19.0.4"
   },
   "devDependencies": {
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
