@@ -4,7 +4,7 @@
     "dot-prop": "^5.2.0",
     "escape-string-regexp": "^1.0.5",
     "eslint-utils": "^1.4.2",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "http-proxy": "^1.18.1",
     "js-yaml": "^3.13.1",
     "kind-of": ">=6.0.3",
