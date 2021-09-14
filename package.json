@@ -18,7 +18,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
-    "set-value": "^3.0.1",
+    "set-value": "^4.0.1",
     "sort-by": "^1.2.0",
     "websocket-extensions": "^0.1.4",
     "yargs-parser": "^19.0.4"
